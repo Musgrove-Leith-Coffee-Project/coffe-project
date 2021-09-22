@@ -29,6 +29,26 @@ function updateCoffees(e) {
         }
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
+
+    userInput.addEventListener('keyup',function (e) {
+        var userKeyStroke = e.target.value;
+        userKeyStroke = userKeyStroke.toLowerCase();
+        var searchedCoffees = [];
+        filteredCoffees.forEach(function(coffee) {
+            if (coffee.name.toLowerCase().includes(userKeyStroke)) {
+                searchedCoffees.push(coffee);
+            }
+        });
+        // TODO Trying to figure out how to search all coffees OR search filteredCoffees if selected
+
+        // coffees.forEach(function(coffee) {
+        //     if (coffee.name.toLowerCase().includes(userKeyStroke)) {
+        //         searchedCoffees.push(coffee);
+        //     }
+        // });
+
+        tbody.innerHTML = renderCoffees(searchedCoffees);
+    });
 }
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
@@ -58,15 +78,3 @@ tbody.innerHTML = renderCoffees(coffees.reverse());
 
 submitButton.addEventListener('click', updateCoffees);
 
-userInput.addEventListener('keyup',function (e) {
-    var userKeyStroke = e;
-
-});
-function renderCoffees(coffees) {
-    var html = '';
-    for(var i = coffees.length - 1; i >= 0; i--) {
-        html += renderCoffee(coffees[i]);
-
-    }
-    return html;
-}
