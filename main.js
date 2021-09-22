@@ -1,11 +1,11 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    var html = '<tr class="coffee">';
-    html += '<td>' + coffee.id + '</td>';
-    html += '<td>' + coffee.name + '</td>';
-    html += '<td>' + coffee.roast + '</td>';
-    html += '</tr>';
+    var html = '<div class="coffee">';
+    html += '<div class="d-none">' + coffee.id + '</div>';
+    html += '<div>' + coffee.name + '</div>';
+    html += '<div>' + coffee.roast + '</div>';
+    html += '</div>';
 
     return html;
 }
@@ -14,6 +14,7 @@ function renderCoffees(coffees) {
     var html = '';
     for(var i = coffees.length - 1; i >= 0; i--) {
         html += renderCoffee(coffees[i]);
+
     }
     return html;
 }
@@ -51,7 +52,21 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+var userInput = document.querySelector('#user-input')
 
-tbody.innerHTML = renderCoffees(coffees);
+tbody.innerHTML = renderCoffees(coffees.reverse());
 
 submitButton.addEventListener('click', updateCoffees);
+
+userInput.addEventListener('keyup',function (e) {
+    var userKeyStroke = e;
+
+});
+function renderCoffees(coffees) {
+    var html = '';
+    for(var i = coffees.length - 1; i >= 0; i--) {
+        html += renderCoffee(coffees[i]);
+
+    }
+    return html;
+}
