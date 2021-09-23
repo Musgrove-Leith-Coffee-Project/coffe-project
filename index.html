@@ -1,90 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-12 text-center">
-            <h1>Coffee!</h1>
-        </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h1>Coffee!</h1>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<div>
+							<div id="coffees" class="animate__animated animate__fadeInUp animate_slower"></div>
+						</div>
+					</div>
+					<div class="col-6">
+						<form>
+							<div>
+								<label class="fw-bold" for="roast-selection">Coffee Roast</label>
+								<div>
+									<select class="col-12" id="roast-selection">
+										<option>All</option>
+										<option>light</option>
+										<option>medium</option>
+										<option>dark</option>
+									</select>
+								</div>
+							</div>
+							<div>
+								<label class="fw-bold" for="roast-selection">Coffee Name</label>
+								<div>
+									<input class="col-12" type="search" id="user-input" placeholder="search coffees">
+								</div>
+							</div>
+							<div>
+								<input class="col-12" id="submit" type="submit"/>
+							</div>
+						</form>
+						<!--                    <hr>-->
+						<!--                    <div Class="h1">Add A Coffee</div>-->
+						<!--                    <form>-->
+						<!--                        <div>-->
+						<!--                            <label class="fw-bold" for="roast-selection">Coffee Roast</label>-->
+						<!--                            <div>-->
+						<!--                                <select class="col-12" id="roast-selection">-->
+						<!--                                    <option>light</option>-->
+						<!--                                    <option>medium</option>-->
+						<!--                                    <option>dark</option>-->
+						<!--                                </select>-->
+						<!--                            </div>-->
+						<!--                        </div>-->
 
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div>
-                        <div id="coffees"></div>
-                    </div>
-                </div>
+						<!--                        <div>-->
+						<!--                            <label class="fw-bold" for="roast-selection">Coffee Name</label>-->
+						<!--                            <div>-->
+						<!--                                <input class="col-12"type="search" id="user-input" placeholder="search coffees">-->
+						<!--                            </div>-->
+						<!--                        </div>-->
 
+						<!--                        <div>-->
+						<!--                            <input class="col-12" id="submit" type="submit"/>-->
+						<!--                        </div>-->
 
-                <div class="col-6">
-                    <form>
-                        <div>
-                            <label class="fw-bold" for="roast-selection">Coffee Roast</label>
-                            <div>
-                                <select class="col-12" id="roast-selection">
-                                    <option>light</option>
-                                    <option>medium</option>
-                                    <option>dark</option>
-                                </select>
-                            </div>
-                        </div>
+						<!--                    </form>-->
+					</div>
+				</div>
+			</div>
 
-                        <div>
-                            <label class="fw-bold" for="roast-selection">Coffee Name</label>
-                            <div>
-                                <input class="col-12"type="search" id="user-input" placeholder="search coffees">
-                            </div>
-                        </div>
-
-                        <div>
-                            <input class="col-12" id="submit" type="submit"/>
-                        </div>
-
-                    </form>
-                    <hr>
-                    <div Class="h1">Add A Coffee</div>
-                    <form>
-                        <div>
-                            <label class="fw-bold" for="roast-selection">Coffee Roast</label>
-                            <div>
-                                <select class="col-12" id="roast-selection">
-                                    <option>light</option>
-                                    <option>medium</option>
-                                    <option>dark</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="fw-bold" for="roast-selection">Coffee Name</label>
-                            <div>
-                                <input class="col-12"type="search" id="user-input" placeholder="search coffees">
-                            </div>
-                        </div>
-
-                        <div>
-                            <input class="col-12" id="submit" type="submit"/>
-                        </div>
-
-                    </form>
-
-                </div>
-            </div>
-        </div>
-
-
-        <script src="main.js"></script>
-    </div>
-
-</div>
+			<script src="main.js"></script>
+		</div>
+	</div>
 
 </body>
 </html>
