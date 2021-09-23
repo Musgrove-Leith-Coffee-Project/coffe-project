@@ -7,3 +7,29 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: burlywood;
+}
+
+input, select {
+    background-color: #a69888;
+    border: 5px solid #484538;
+    border-radius: .5em;
+}
+
+.header-background {
+    background-image: url('https://cdn9.bigcommerce.com/s-p2ed6r2j/product_images/uploaded_images/nespresso-header-gif.gif?t=1446465389');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 25vh;
+    border-radius: 1em;
+}
+
+.section-bg {
+    background-color: ivory;
+}
