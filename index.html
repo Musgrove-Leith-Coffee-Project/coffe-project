@@ -9,19 +9,31 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="grad">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 text-center">
-				<h1>Coffee!</h1>
+			<nav>
+				<div class="navbar justify-content-center">
+					<div class="nav-item">Home</div>
+					<div class="nav-item">Store</div>
+					<div class="nav-item">About</div>
+					<div class="nav-item">Contact Us</div>
+				</div>
+			</nav>
+			<div class="col-12 header-background">
+				<div class="h1 text-center">Coffee!</div>
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-6">
+					<div class="section-bg">
 						<div>
-							<div id="coffees" class="animate__animated animate__fadeInUp animate_slower"></div>
+							<div id="coffees" class="row animate__animated animate__fadeInUp animate_slower"></div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
 					<div class="col-6">
 						<form>
 							<div>
@@ -45,32 +57,31 @@
 								<input class="col-12" id="submit" type="submit"/>
 							</div>
 						</form>
-						<!--                    <hr>-->
-						<!--                    <div Class="h1">Add A Coffee</div>-->
-						<!--                    <form>-->
-						<!--                        <div>-->
-						<!--                            <label class="fw-bold" for="roast-selection">Coffee Roast</label>-->
-						<!--                            <div>-->
-						<!--                                <select class="col-12" id="roast-selection">-->
-						<!--                                    <option>light</option>-->
-						<!--                                    <option>medium</option>-->
-						<!--                                    <option>dark</option>-->
-						<!--                                </select>-->
-						<!--                            </div>-->
-						<!--                        </div>-->
-
-						<!--                        <div>-->
-						<!--                            <label class="fw-bold" for="roast-selection">Coffee Name</label>-->
-						<!--                            <div>-->
-						<!--                                <input class="col-12"type="search" id="user-input" placeholder="search coffees">-->
-						<!--                            </div>-->
-						<!--                        </div>-->
-
-						<!--                        <div>-->
-						<!--                            <input class="col-12" id="submit" type="submit"/>-->
-						<!--                        </div>-->
-
-						<!--                    </form>-->
+					</div>
+					<hr>
+					<div class="col-6">
+						<div Class="h1">Add A Coffee</div>
+						<form>
+							<div>
+								<label class="fw-bold" for="roast-selection">Coffee Roast</label>
+								<div>
+									<select class="col-12">
+										<option>light</option>
+										<option>medium</option>
+										<option>dark</option>
+									</select>
+								</div>
+							</div>
+							<div>
+								<label class="fw-bold" for="roast-selection">Coffee Name</label>
+								<div>
+									<input class="col-12" type="search" placeholder="search coffees">
+								</div>
+							</div>
+							<div>
+								<input class="col-12" type="submit"/>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
