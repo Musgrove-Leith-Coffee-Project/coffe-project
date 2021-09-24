@@ -33,3 +33,7 @@ input, select {
 .section-bg {
     background-color: ivory;
 }
+/*added class for spacing*/
+.equal-border {
+    margin-top: 3.5em;
+}
