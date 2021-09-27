@@ -38,17 +38,15 @@ input, select {
 }
 
 .section-bg {
-    background-color: rgba(255, 255, 240, 0.2);
+    background-color: rgba(72, 69, 56, 0.5);
     border-radius: 1em;
 }
-/*added class for spacing*/
-.equal-border {
-    /*margin-top: 3.5em;*/
+
 }
 .nav-bg {
-    background-color: rgba(255, 255, 240, .3);
+    background-color: rgba(72, 69, 56, 0.9);
     border-radius: .5em;
-    color: #484538;
+    padding:0 .7em;
 }
 .vert-center{
     line-height: 25vh;
